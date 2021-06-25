@@ -1,0 +1,7 @@
+C:\Users\hemanth.p\source\repos\example\BMICalculationApp\bin\Debug\BMICalculationApp.exe.config
+C:\Users\hemanth.p\source\repos\example\BMICalculationApp\bin\Debug\BMICalculationApp.exe
+C:\Users\hemanth.p\source\repos\example\BMICalculationApp\bin\Debug\BMICalculationApp.pdb
+C:\Users\hemanth.p\source\repos\example\BMICalculationApp\obj\Debug\BMICalculationApp.csprojResolveAssemblyReference.cache
+C:\Users\hemanth.p\source\repos\example\BMICalculationApp\obj\Debug\BMICalculationApp.csproj.CoreCompileInputs.cache
+C:\Users\hemanth.p\source\repos\example\BMICalculationApp\obj\Debug\BMICalculationApp.exe
+C:\Users\hemanth.p\source\repos\example\BMICalculationApp\obj\Debug\BMICalculationApp.pdb

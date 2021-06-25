@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8CA5D6E-7137-443A-910F-0A7ABAF94CD8}</ProjectGuid>
+    <ProjectGuid>{F354E0A4-56CA-4CE9-B0B5-2BD5249CDCE4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>problem</RootNamespace>
-    <AssemblyName>problem</AssemblyName>
+    <RootNamespace>BMICalculationApp</RootNamespace>
+    <AssemblyName>BMICalculationApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserInputDatas.cs" />
+    <Compile Include="BmiCalculation.cs" />
+    <Compile Include="ConsolemessageDisplay.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInputs.cs" />
+    <Compile Include="Validation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

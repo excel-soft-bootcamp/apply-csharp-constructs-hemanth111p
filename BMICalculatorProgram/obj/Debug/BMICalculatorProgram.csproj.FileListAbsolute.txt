@@ -1,7 +1,0 @@
-C:\Users\hemanth.p\source\repos\example\problem\obj\Debug\BMICalculatorProgram.csprojResolveAssemblyReference.cache
-C:\Users\hemanth.p\source\repos\example\problem\obj\Debug\BMICalculatorProgram.csproj.CoreCompileInputs.cache
-C:\Users\hemanth.p\source\repos\example\problem\obj\Debug\problem.exe
-C:\Users\hemanth.p\source\repos\example\problem\obj\Debug\problem.pdb
-C:\Users\hemanth.p\source\repos\example\problem\bin\Debug\problem.exe.config
-C:\Users\hemanth.p\source\repos\example\problem\bin\Debug\problem.exe
-C:\Users\hemanth.p\source\repos\example\problem\bin\Debug\problem.pdb

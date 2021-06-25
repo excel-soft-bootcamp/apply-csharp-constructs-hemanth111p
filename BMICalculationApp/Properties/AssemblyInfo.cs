@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("problem")]
+[assembly: AssemblyTitle("BMICalculationApp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("problem")]
+[assembly: AssemblyProduct("BMICalculationApp")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b8ca5d6e-7137-443a-910f-0a7abaf94cd8")]
+[assembly: Guid("f354e0a4-56ca-4ce9-b0b5-2bd5249cdce4")]
 
 // Version information for an assembly consists of the following four values:
 //
