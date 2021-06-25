@@ -6,28 +6,26 @@ using System.Threading.Tasks;
 
 namespace BMICalculationApp
 {
-    class Validation
+    class BmiValueValidation
     {
-       
-        public void validate(int va)
-        {
 
-            ConsolemessageDisplay cd = new ConsolemessageDisplay();
-            if (va < 18.5)
+        #region Checking BMIvalue 
+        public string CheckCondition(int BMIValue)
+        {
+            if (BMIValue < 18.5)
             {
-               cd.message1();
+                return "UnderWeight";
             }
-            else if (va >= 25)
+            else if (BMIValue >= 25)
             {
-                cd.message2();
+                return "OverWeight";
             }
             else
             {
-                cd.message3();
+                return "Normal";
             }
-
-
         }
+        #endregion
 
     }
 }

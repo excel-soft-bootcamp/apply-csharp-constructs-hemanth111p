@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace BMICalculationApp
 {
-    class BmiValueCalculation
+    public class BmiValueCalculation
     {
-       int BmiValue;
+        private int bmivalue;
 
-        public void calculator(int height,int weight)
+        public int calculator(int height,int weight)
         {
-            BmiValue = weight / height;
-            BmiValueValidation va = new BmiValueValidation();
-            va.validate(BmiValue);
+            bmivalue= weight / height;
+            return bmivalue;
         }
         
         

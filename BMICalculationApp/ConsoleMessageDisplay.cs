@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace BMICalculationApp
 {
-    class ConsolemessageDisplay
+    class ConsoleMessageDisplay
     {
-        public void message1() { Console.WriteLine("underweight"); }
-        public void message2() { Console.WriteLine("overweight"); }
-        public void message3() { Console.WriteLine("healthy person"); }
+        #region Message display
+        public void Display(string message)
+        {
+
+            Console.WriteLine(message);
+        }
+
+
+        #endregion
     }
 }

@@ -12,15 +12,17 @@ namespace BMICalculationApp
         {
             UserInputs inputs = new UserInputs();
 
-            Console.WriteLine("enter user height in meters");
-            inputs.SetUserHeight(Console.ReadLine());
+          
 
-            Console.WriteLine("enter user weight in kilogram");
-            inputs.SetUserWeight(Console.ReadLine());
+            BmiValueCalculation value = new BmiValueCalculation();
+            int BmiValue=value.calculator(inputs.GetUserHeight(),inputs.GetUserWeight());
+            
 
-            BmiCalculation bc = new BmiCalculation();
-            bc.calculator(inputs.GetUserHeight(),inputs.GetUserWeight());
+            BmiValueValidation validate = new BmiValueValidation();
+           string message= validate.CheckCondition(BmiValue);
 
+            ConsoleMessageDisplay display = new ConsoleMessageDisplay();
+            display.Display(message);
             
             
             

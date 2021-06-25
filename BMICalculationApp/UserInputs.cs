@@ -8,23 +8,27 @@ namespace BMICalculationApp
 {
     class UserInputs
     {
-        #region state
-        private int height;
-
-       private int weight;
-        #endregion
-
-        #region behavious , public interfaces / nutrators message passing
-        public int GetUserHeight() { return this.height; }
-
-        public int GetUserWeight() { return this.weight; }
-        public void SetUserHeight(string value) { this.height = Convert.ToInt32(value); }
-
-        public void SetUserWeight(String value) { this.weight = Convert.ToInt32(value); }
-        #endregion
-
-
-
         
+
+        public int GetUserHeight()
+        {
+            int height = int.Parse(this.ReadFromConsole("Enter your height in meter:"));
+            return height;
+        }
+
+        public int GetUserWeight()
+        {
+            int weight = int.Parse(this.ReadFromConsole("Enter your weight in kg:"));
+            return weight;
+        }
+        private string ReadFromConsole(string message)
+        {
+
+            Console.WriteLine(message);
+            string input = Console.ReadLine();
+            return input;
+        }
+
+
     }
 }
