@@ -1,0 +1,117 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace college
+{
+    public class CollegeMember
+    {
+        private int _idNumber, phoneNumber;
+        private string _name, DOB, _bloodGroup, _address, _department;
+
+        //Telescopic Constructor Chain
+        public CollegeMember(int idNumber)
+        {
+            this._idNumber = idNumber;
+        }
+
+        public CollegeMember(int idNumber, string name) : this(idNumber)
+        {
+
+            this._name = name;
+
+        }
+        public CollegeMember(int idNumber, string name, int contactNumber) : this(idNumber, name)
+        {
+
+            this.phoneNumber = contactNumber;
+
+        }
+        public CollegeMember(int idNumber, string name, int contactNumber, string department) : this(idNumber, name, contactNumber)
+        {
+
+            this._department = department;
+
+        }
+        public CollegeMember(int idNumber, string name, int contactNumber, string department, string dateOfBirth) : this(idNumber, name, contactNumber, department) {
+
+            this.DOB = dateOfBirth;
+
+        }
+        public CollegeMember(int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address) : this(idNumber, name, contactNumber, department, dateOfBirth)
+        {
+
+            this._address = address;
+
+        }
+        public CollegeMember(int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : this(idNumber, name, contactNumber, department, dateOfBirth, address)
+        {
+
+            this._bloodGroup = bloodGroup;
+
+        }
+
+
+
+    }
+    //student is-a Collegemember
+    public class Student : CollegeMember
+    {
+
+        #region members
+        string _dateOfAdmission;
+
+        #endregion
+
+        public Student(string dateOfAdmission, int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : base(idNumber, name, contactNumber, department, dateOfBirth, address, bloodGroup)
+        {
+            this._dateOfAdmission = dateOfAdmission;
+
+        }
+
+
+
+
+    }
+
+    //Teacher  is-a Collegemember
+    class Teacher : CollegeMember
+    {
+
+
+        private string _dateOfJoining;
+        private string position;
+        public Teacher(string dateOfJoining, string _position, int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : base(idNumber, name, contactNumber, department, dateOfBirth, address, bloodGroup)
+        {
+            this._dateOfJoining = dateOfJoining;
+            this.position = _position;
+        }
+
+    }
+    //Staff  is-a Collegemember
+    class Staff : CollegeMember
+    {
+
+
+        private string _workType;
+
+        public Staff(string workType, int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : base(idNumber, name, contactNumber, department, dateOfBirth, address, bloodGroup)
+        {
+
+            this._workType = workType;
+
+        }
+    }
+    //Guest  is-a Collegemember
+    class Guest : CollegeMember
+    {
+        private string _dateOfVisit;
+        public Guest(string dateOfVisit, int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : base(idNumber, name, contactNumber, department, dateOfBirth, address, bloodGroup)
+        {
+            this._dateOfVisit = dateOfVisit;
+        }
+    }
+}
+

@@ -1,0 +1,7 @@
+C:\Users\hemanth.p\source\repos\example\college\obj\Debug\college.csprojResolveAssemblyReference.cache
+C:\Users\hemanth.p\source\repos\example\college\obj\Debug\college.csproj.CoreCompileInputs.cache
+C:\Users\hemanth.p\source\repos\example\college\bin\Debug\college.exe.config
+C:\Users\hemanth.p\source\repos\example\college\bin\Debug\college.exe
+C:\Users\hemanth.p\source\repos\example\college\bin\Debug\college.pdb
+C:\Users\hemanth.p\source\repos\example\college\obj\Debug\college.exe
+C:\Users\hemanth.p\source\repos\example\college\obj\Debug\college.pdb
