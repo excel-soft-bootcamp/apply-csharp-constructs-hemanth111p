@@ -56,62 +56,10 @@ namespace college
 
 
     }
-    //student is-a Collegemember
-    public class Student : CollegeMember
-    {
+    
 
-        #region members
-        string _dateOfAdmission;
-
-        #endregion
-
-        public Student(string dateOfAdmission, int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : base(idNumber, name, contactNumber, department, dateOfBirth, address, bloodGroup)
-        {
-            this._dateOfAdmission = dateOfAdmission;
-
-        }
-
-
-
-
-    }
-
-    //Teacher  is-a Collegemember
-    class Teacher : CollegeMember
-    {
-
-
-        private string _dateOfJoining;
-        private string position;
-        public Teacher(string dateOfJoining, string _position, int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : base(idNumber, name, contactNumber, department, dateOfBirth, address, bloodGroup)
-        {
-            this._dateOfJoining = dateOfJoining;
-            this.position = _position;
-        }
-
-    }
-    //Staff  is-a Collegemember
-    class Staff : CollegeMember
-    {
-
-
-        private string _workType;
-
-        public Staff(string workType, int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : base(idNumber, name, contactNumber, department, dateOfBirth, address, bloodGroup)
-        {
-
-            this._workType = workType;
-
-        }
-    }
-    //Guest  is-a Collegemember
-    class Guest : CollegeMember
-    {
-        private string _dateOfVisit;
-        public Guest(string dateOfVisit, int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : base(idNumber, name, contactNumber, department, dateOfBirth, address, bloodGroup)
-        {
-            this._dateOfVisit = dateOfVisit;
-        }
-    }
+   
+    
+    
 }
 
