@@ -1,0 +1,7 @@
+C:\Users\hemanth.p\source\repos\example\tatacar\bin\Debug\tatacar.exe.config
+C:\Users\hemanth.p\source\repos\example\tatacar\bin\Debug\tatacar.exe
+C:\Users\hemanth.p\source\repos\example\tatacar\bin\Debug\tatacar.pdb
+C:\Users\hemanth.p\source\repos\example\tatacar\obj\Debug\tatacar.csprojResolveAssemblyReference.cache
+C:\Users\hemanth.p\source\repos\example\tatacar\obj\Debug\tatacar.csproj.CoreCompileInputs.cache
+C:\Users\hemanth.p\source\repos\example\tatacar\obj\Debug\tatacar.exe
+C:\Users\hemanth.p\source\repos\example\tatacar\obj\Debug\tatacar.pdb
