@@ -11,10 +11,10 @@ namespace college
 
         static void Main()
         {
-            Student _student = new Student("1-06-2020",1001,"rama",123456789,"EC","17/03/1997","mysore","A+");
-            Teacher _teacher = new Teacher("1-1-2020","Principle",121,"abcd",125124,"mathematics","2-5-1980","bengalore","B-");
-            Staff _staff = new Staff("librarian",1001,"ravi",8541254,"library","6-4-1990","mysore","O+");
-            Guest _guest = new Guest("14-4-2021",12,"raju",74512546,"office","1-4-1995","xyz","O+");
+            Student _student = new Student("1-6-2020","4VM17EC413","rama",1234567,"EC","1-7-1998","mysore");
+            Teacher _teacher = new Teacher("14-6-2019","HeadOfDepartment",12457,"yogesh",12457,"CS","mysore");
+            Staff _staff = new Staff("librarian",1245,"ravi",124678,"library","mysore");
+            Guest _guest = new Guest("14-6-2020","raju",3546678,"bengalore");
 
         }
     }

@@ -10,14 +10,17 @@ namespace college
     public class Student : CollegeMember
     {
 
-        #region members
-        string _dateOfAdmission;
+        private string _USN;
+        private string _dateOfAdmission;
+        private string DOB;
+        private string _department;
 
-        #endregion
-
-        public Student(string dateOfAdmission, int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : base(idNumber, name, contactNumber, department, dateOfBirth, address, bloodGroup)
+        public Student(string dateOfAdmission, string USN, string Name, int contactNumber, string department, string dateOfBirth, string Address) : base(Name, contactNumber, Address)
         {
             this._dateOfAdmission = dateOfAdmission;
+            this.DOB = dateOfAdmission;
+            this._department = department;
+            this._USN = USN;
 
         }
 

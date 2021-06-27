@@ -10,13 +10,16 @@ namespace college
     class Teacher : CollegeMember
     {
 
-
+        private int _EmployeeNumber;
         private string _dateOfJoining;
         private string position;
-        public Teacher(string dateOfJoining, string _position, int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : base(idNumber, name, contactNumber, department, dateOfBirth, address, bloodGroup)
+        private string _Department;
+        public Teacher(string dateOfJoining, string _position, int EmployeeNumber, string Name, int contactNumber, string department, string Address) : base(Name, contactNumber, Address)
         {
             this._dateOfJoining = dateOfJoining;
             this.position = _position;
+            this._EmployeeNumber = EmployeeNumber;
+            this._Department = department;
         }
 
     }

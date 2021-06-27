@@ -6,54 +6,30 @@ using System.Threading.Tasks;
 
 namespace college
 {
-    public class CollegeMember
+    abstract class CollegeMember
     {
-        private int _idNumber, phoneNumber;
-        private string _name, DOB, _bloodGroup, _address, _department;
+        private int phoneNumber;
+        private string _name,  _address;
 
         //Telescopic Constructor Chain
-        public CollegeMember(int idNumber)
+        public CollegeMember(string Name)
         {
-            this._idNumber = idNumber;
+            this._name = Name;
         }
 
-        public CollegeMember(int idNumber, string name) : this(idNumber)
-        {
-
-            this._name = name;
-
-        }
-        public CollegeMember(int idNumber, string name, int contactNumber) : this(idNumber, name)
+        public CollegeMember(string Name, int contactNumber ) : this(Name)
         {
 
-            this.phoneNumber = contactNumber;
+            this.phoneNumber = contactNumber; ;
 
         }
-        public CollegeMember(int idNumber, string name, int contactNumber, string department) : this(idNumber, name, contactNumber)
+        public CollegeMember(string Name, int contactNumber,string Address) : this(Name,contactNumber)
         {
 
-            this._department = department;
+            this._address = Address;
 
         }
-        public CollegeMember(int idNumber, string name, int contactNumber, string department, string dateOfBirth) : this(idNumber, name, contactNumber, department) {
-
-            this.DOB = dateOfBirth;
-
-        }
-        public CollegeMember(int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address) : this(idNumber, name, contactNumber, department, dateOfBirth)
-        {
-
-            this._address = address;
-
-        }
-        public CollegeMember(int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : this(idNumber, name, contactNumber, department, dateOfBirth, address)
-        {
-
-            this._bloodGroup = bloodGroup;
-
-        }
-
-
+        
 
     }
     

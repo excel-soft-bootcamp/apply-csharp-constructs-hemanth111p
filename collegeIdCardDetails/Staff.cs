@@ -12,12 +12,15 @@ namespace college
 
 
         private string _workType;
+        private string _department;
+        private int _IdNumber;
 
-        public Staff(string workType, int idNumber, string name, int contactNumber, string department, string dateOfBirth, string address, string bloodGroup) : base(idNumber, name, contactNumber, department, dateOfBirth, address, bloodGroup)
+        public Staff(string workType, int idNumber, string Name, int contactNumber, string department, string Address) : base(Name, contactNumber, Address)
         {
 
             this._workType = workType;
-
+            this._department = department;
+            this._IdNumber = idNumber;
         }
     }
 }
