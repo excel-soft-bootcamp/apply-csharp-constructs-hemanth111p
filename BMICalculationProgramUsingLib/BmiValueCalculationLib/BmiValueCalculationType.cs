@@ -8,11 +8,11 @@ namespace BmiValueCalculationLib
 {
     public static class BmiValueCalculationType
     {
-        public static int bmivalue;
+        
 
-        public static int calculator(int height, int weight)
+        public static int Calculator(int height, int weight)
         {
-            bmivalue = weight / height;
+           int bmivalue = weight / height;
             return bmivalue;
         }
 
