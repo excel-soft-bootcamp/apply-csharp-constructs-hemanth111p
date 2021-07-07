@@ -13,7 +13,7 @@ namespace BmiCalculationApllication
             int height = UserInputReadFromConsoleLib.UserInputReadFromConsoleType.GetUserHeight();
             int weight = UserInputReadFromConsoleLib.UserInputReadFromConsoleType.GetUserWeight();
 
-            int bmiValue=BmiValueCalculationLib.BmiValueCalculationType.calculator(height, weight);
+            int bmiValue=BmiValueCalculationLib.BmiValueCalculationType.Calculator(height, weight);
 
             string message = BmiValueValidatorLib.BmiValueValidatorType.CheckCondition(bmiValue);
 
