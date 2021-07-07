@@ -9,13 +9,13 @@ namespace BmiValueValidatorLib
     public static class BmiValueValidatorType
     {
         
-        public static string CheckCondition(int BMIValue)
+        public static string CheckCondition(int bmiValue)
         {
-            if (BMIValue < 18.5)
+            if (bmiValue < 18.5)
             {
                 return "UnderWeight";
             }
-            else if (BMIValue >= 25)
+            else if (bmiValue >= 25)
             {
                 return "OverWeight";
             }
