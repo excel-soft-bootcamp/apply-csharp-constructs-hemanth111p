@@ -22,7 +22,7 @@ namespace UserInputReadFromConsoleLib
         public static string ReadFromConsole(string message)
         {
 
-            Console.WriteLine(message);
+          ConsoleMesaageDisplayLib.ConsoleMessageType.Display(message);
             string input = Console.ReadLine();
             return input;
         }
